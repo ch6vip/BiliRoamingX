@@ -57,9 +57,10 @@
             android:key="disallow_collect_privacy_info"
             android:summary="@string/biliroaming_disallow_collect_privacy_info_summary"
             android:title="@string/biliroaming_disallow_collect_privacy_info_title" />
-        <androidx.preference.Preference
-            android:key="route"
-            android:title="@string/biliroaming_route_title" />
+        <androidx.preference.SwitchPreferenceCompat
+            android:key="disable_non_official_alert"
+            android:summary="@string/biliroaming_disable_non_official_alert_summary"
+            android:title="@string/biliroaming_disable_non_official_alert_title" />
     </androidx.preference.PreferenceCategory>
 
     <androidx.preference.PreferenceCategory
@@ -151,6 +152,11 @@
         android:key="category_always_enabled"
         android:layout="@layout/bili_app_layout_preference_category_title"
         android:title="@string/biliroaming_always_enabled_title">
+        <androidx.preference.Preference
+            android:key="prefs_pay_coins"
+            android:summary="@string/biliroaming_pay_coins_summary"
+            android:title="@string/biliroaming_pay_coins_title"
+            android:widgetLayout="@null" />
         <androidx.preference.Preference
             android:key="prefs_clear_app_icon"
             android:summary="@string/biliroaming_clear_app_icon_summary"
