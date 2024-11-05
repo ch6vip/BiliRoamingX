@@ -27,7 +27,7 @@ tasks.jar {
         attributes["Description"] = "Patches for BiliRoamingX."
         attributes["Version"] = version
         attributes["Timestamp"] = System.currentTimeMillis().toString()
-        attributes["Source"] = "git@github.com:BiliRoamingX/BiliRoamingX.git"
+        attributes["Source"] = "git@github.com:ch6vip/BiliRoamingX.git"
         attributes["Author"] = "Kofua"
         attributes["License"] = "GNU General Public License v3.0"
     }
@@ -87,7 +87,7 @@ publishing {
     repositories {
         maven {
             name = "GitHubPackages"
-            url = uri("https://maven.pkg.github.com/BiliRoamingX/BiliRoamingX")
+            url = uri("https://maven.pkg.github.com/ch6vip/BiliRoamingX")
             credentials {
                 username = project.findProperty("gpr.user") as String?
                     ?: System.getenv("GITHUB_ACTOR")
@@ -118,9 +118,9 @@ publishing {
                     }
                 }
                 scm {
-                    connection = "scm:git:git://github.com/BiliRoamingX/BiliRoamingX.git"
-                    developerConnection = "scm:git:git@github.com:BiliRoamingX/BiliRoamingX.git"
-                    url = "https://github.com/BiliRoamingX/BiliRoamingX"
+                    connection = "scm:git:git://github.com/ch6vip/BiliRoamingX.git"
+                    developerConnection = "scm:git:git@github.com:ch6vip/BiliRoamingX.git"
+                    url = "https://github.com/ch6vip/BiliRoamingX"
                 }
             }
         }
